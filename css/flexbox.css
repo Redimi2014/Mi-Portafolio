@@ -1,0 +1,178 @@
+/*este archivo Css es para organizar los elementos en cuadriculas de forma ordenada*/
+/*PAra identificar elementos y liena de codigo  y saber en que posicion estan se debe utilizar el inspeccionador de elementos*/
+
+/*Flexbox es un método de diseño de página unidimensional para compaginar elementos en
+ filas o columnas. Los elementos de contenido se ensanchan para rellenar el espacio adicional
+  y se encogen para caber en espacios más pequeños.*/
+.headerPrincipal .container {
+  /*Contenedor generar de la parte superior*/
+  /*estos ajustes modificaran el contenedor el cual contiene la clase titulo de un lado y la barra 
+de navegacio en otro, y con esto los dividiremos*/
+  display: flex;
+  /* colocar los elementos uno al lado del otro*/
+  align-items: center;
+  /*alineamos los elementos verticalmente*/
+  justify-content: space-between;
+  /*Agregar espacio entre ellos, entre los 2 elementos*/
+}
+
+.headerPrincipal-nav {
+  /*Este es el nomnbre de la clase (Elemento Nav)*/
+  /*Esto solo aplicara para la barra de navegacion, Barra de menu que esta al lado del titulo*/
+  display: flex;
+  /* colocar los elementos uno al lado del otro*/
+
+}
+
+.rodapePrincipal-patrocinadores .container {
+  /*Container, Este es el nomnbre de la clase, Esta dentro del elemento Footer (Elemento Seccion)*/
+  /*Esto es para modificar la parte de los patrocinadores*/
+  display: flex;
+  justify-content: space-between;
+  /*Agregar espacio al rededor de ellos,*/
+
+}
+
+.rodapePrincipal-patrocinadores-list {
+  /*Este es un elemento de tipo UL que esta dentro del container de la seccion general(Padre ) de los patrocinadores*/
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /*Agregar espacio al rededor de los elementos,*/
+  width: 70%;
+  /*Agregar un espacio entre elemenos */
+  margin-right: 5%;
+  /*agregar un margen a la derecha*/
+
+}
+
+.rodapePrincipal-contatoForm {
+  /*Este es el conenedor que tiene todos los elementos que conforma entre en contacto*/
+  width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+  /*Esta parte esta dentro de entre en contacos que contiene el texbox y el boton enviar*/
+  display: flex;
+}
+
+/*ahora esta area es para el mapa de cursos*/
+.rodapePrincipal-navMap-list {
+  display: flex;
+  flex-direction: column;
+  /*Colocar los elementos en columnas*/
+  height: 260px;
+  /*Aplicarle altura*/
+  flex-wrap: wrap;
+  /*cuando llegue a la cantidad de pixel indicado en el  height se detendra y pasara a una nueva columna */
+}
+
+
+/*Seccion que muestra Nuestros cursos (el cuerpo principal)*/
+.contenidoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+  display: flex;
+  width: 23%;
+}
+
+/*Area donde esta el videjo (Ventajas de miniaula)*/
+.videoSobre .container {
+  display: flex;
+  
+}
+.videoSobre-sobre {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.videoSobre-video {
+  flex-grow: 2; /*para incrementar los espacio entre los elementos en los contenedores*/
+flex-shrink: 2; /*conforme vaya disminuyendo la pantalla disminuira 2 espacio */
+}
+
+.videoSobre-sobre-list {
+  flex-grow: 2; /*Para que el video ocupe mas espacio*/
+}
+/*Responsive (Capacidad de respuesta)*/
+/*a partir de aca sera la parte responsive (que se aplique para el modo telefono movil)*/
+/*Utilizar mediaquery, para cambiar del modo escritorio al modo movil*/
+@media (max-width:768px) {
+  /*Apliar que tenga el modo mobil despues que tenga 768 pixeles de ancho si tiene mas pixeles que adquiera el modo tablet*/
+
+  .headerPrincipal .container {
+    /*header*/
+    flex-direction: column;
+    align-items: initial;
+    /*Para aliniar la barra de punta a punta, toda la pagina*/
+    text-align: center;
+    /*centralizar el texto al centro */
+  }
+
+  .headerPrincipal-nav {
+    /*Este es el nomnbre de la clase (Elemento Nav)*/
+    flex-direction: column;
+    /*Organizar los elementos en columna, y se clasificaran en cordenada Y (Verticalmente )*/
+  }
+
+  .contenidoPrincipal-cursos {
+    flex-direction: column;
+
+  }
+
+  .contenidoPrincipal-cursos-link {
+    width: 100%;
+    /*Esto es para que los contenidos que tengan el nombre de esta clase se ajusten al tamaño total de la pagina*/
+  }
+
+  .rodapePrincipal-navMap-list {
+    height: auto;
+    /*colocar el tamaño automatico en el area del mapa de curso*/
+    flex-wrap: nowrap;
+  }
+
+  .rodapePrincipal-patrocinadores .container {
+    /*Para organziar la seccion patrocinadores en columna*/
+    flex-direction: column;
+  }
+
+  .rodapePrincipal-contatoForm {
+    /*Para colocar la seccion contacto dentro dl foter que cubra toda la seccion */
+    width: 100%;
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+    /*Para centralizar las imagenes de los patrocinadores*/
+    align-items: center;
+    width: 100%;
+    margin: 0%;
+  }
+
+  .rodapePrincipal-contatoForm-fieldset {
+    /*para centralizar el texbox y el boton de entre contacto*/
+    justify-content: center;
+  }
+
+  /*Ordenar los flexitem en otra posicion (cambiar la posicion de los elementos del menu)*/
+.headerPrincipal-nav-link-app { /*ordenar la opcion nuestra APP al principio del menu, pero como esta dentro del mediaquery esto solo aplicara en la version movil*/
+  order: -1; 
+}
+
+.videoSobre {
+  background-image: url(../img/bg-intro.jpg); /*Poner imagen en el background*/
+  background-size: cover;
+  padding-top: 8.25rem;
+}
+
+.videoSobre .container {
+  flex-direction: column;
+ 
+}
+
+} /*llave de cierre del mediaquery*/
+
+
