@@ -1,102 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mi Portafolio | Reymond Perezz</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/flexbox.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-acale= 1.0">
+    <title>Personal Portafolio Website HTML CSS Java Script | Codehal</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Este CSS nos servira para utilizar los iconos de la pagina https://boxicons.com en el buscador buscamos el icono que querramos le damos un clic luego en font y copiamos la clase-->
+
 </head>
+<!--Barra para mi Menu-->
+
 <body>
-	<header class="headerPrincipal">
-		<div class="container">
-			<h1 class="headerPrincipal-titulo">
-				<a href="./index.html">PORTAFOLIO</a>
-			</h1>
-			<nav class="headerPrincipal-nav">
-				<a class="headerPrincipal-nav-link" href="./sobre_mi.html">Sobre mi</a>
-				<a class="headerPrincipal-nav-link" href="./skills.html">Skills</a>
-				<a class="headerPrincipal-nav-link" href="./formacion.html">Formación</a>
-				<a class="headerPrincipal-nav-link" href="./Proyectos.html">Proyectos</a>
-				<a class="headerPrincipal-nav-link headerPrincipal-nav-link-app" href="#">reymond.g.perez1995@gmail.com</a>
-			</nav>
-		</div>
-	</header>
-	<main class="contenidoPrincipal">
-		<section class="videoSobre">
-			<div class="container">
-				<img class="videoSobre-video" width="560" height="360" src="./img/PERFIL.jpg" frameborder="0"
-					allowfullscreen>
-				<div class="videoSobre-sobre">
-					<h2 class="videoSobre-sobre-title">HOLA</h2>
-					<ul class="videoSobre-sobre-list">
-						<li class="videoSobre-sobre-item">MI NOMBRE ES REYMOND PEREZ Y CONSTRUYO PAGINAS WEB</li>
-						<li class="videoSobre-sobre-item">Soy formado en la Universidad Catolica Técnologica de
-							Barahona,
-							Republica Dominicana, y actualmente estoy participando del proyecto ONE en Alura Latam de
-							ORACLE</li>
-						<li class="videoSobre-sobre-item">Mis redes</li>
-						<UL class="videoSobre-Lista-button">
-							<a class="videoSobre-button" href="https://github.com/Redimi2014" target="_blank">Acceso a Github</a>
-							<a class="videoSobre-button" href="https://www.linkedin.com/in/reymondperezdelapaz" target="_blank">Acceso a Linkedin</a>
-							<a class="videoSobre-button" href="https://www.facebook.com/BK30Rey/" target="_blank">Acceso a Facebook</a>
-							<a class="videoSobre-button" href="./Documents/Curriculum.pdf" target="_blank">Acceso a Curriculo</a>
-						</UL>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<div class="container">
-			<h2 class="subtitulo">MIS PROYECTOS</h2>
-			<nav>
-				<ul class="contenidoPrincipal-cursos">
-					<li class="contenidoPrincipal-cursos-link"><a href="https://github.com/Redimi2014/Mi-Portafolio.git" target="_blank">Mi Portafolio</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="https://github.com/Redimi2014/Flexbox.git" target="_blank">Flexbox</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="https://github.com/Redimi2014/Encriptado.git" target="_blank">Encriptado de Texto</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="https://github.com/Redimi2014/Arquitectura-css-base-main.git" target="_blank">Arquitectura CSS</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="https://github.com/Redimi2014/Layouts-responsivo.git" target="_blank">Layouts-responsivo</a></li>
-				</ul>
-			</nav>
-		</div>
-	</main>
-	<footer class="rodapePrincipal">
-		<section class="rodapePrincipal-patrocinadores">
-			<div class="container">
-				<ul class="rodapePrincipal-patrocinadores-list">
-					<li>
-						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-alura" href="#">
-							<img src="img/logos/alura.svg" alt="Logo da Alura">
-						</a>
-					</li>
-						<!--<li>
-						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-caelum" href="#">
-							<img src="img/logos/caelum.svg" alt="Logo da Caelum">
-						</a>
-					</li>
-				<li>
-						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-casaDoCodigo"
-							href="#">
-							<img src="img/logos/cdc.svg" alt="Logo da Casa do Código">
-						</a>
-					
-				</ul>
-				<form class="rodapePrincipal-contatoForm" action="#">
-					<fieldset>
-						<legend class="rodapePrincipal-contatoForm-legend" for="email-contato">Entre en contacto
-						</legend>
-						<div class="rodapePrincipal-contatoForm-fieldset">
-							<input class="rodapePrincipal-contatoForm-emailInput" type="email" name="email-contato"
-								id="email-contato">
-							<button class="rodapePrincipal-contatoForm-submit" type="submit">Enviar</button>
-						</div>
-					</fieldset>
-				</form>
-				</li>-->
-			</div>
-		</section>
-	</footer>
+    <header class="header">
+        <a href="./index.html" class="logo">Rey.</a>
+        <nav class="navbar">
+            <a href="./index.html" class="active">Inicio</a>
+            <a href="./subpaginas/skills1.html">Skills</a>
+            <a href="./subpaginas/formacion.html">Formación</a>
+            <a href="./subpaginas/proyectos.html">Proyectos</a>
+            <a href="./subpaginas/contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <!--Barra para mi Portada-->
+    <section class="home">
+        <!--Para crear un objeto con una clase se pone el nombre del objeto un punto y luego el nombre de la clase, ejemplo section.home-->
+        <div class="home-content">
+            <h1>Hola, soy Reymond Perez</h1>
+            <h3>Desarrollador Frontend</h3>
+            <p>
+                           
+                Soy un licenciado en Informática con una verdadera pasión por la
+                 programación, Mas en el ámbito front-end. A lo largo de mi carrera,
+                  he adquirido experiencia en el área de soporte técnico, brindando 
+                  soluciones eficientes y satisfactorias a los clientes. Me considero una persona 
+                  proactiva, creativa y siempre con ganas de aprender nuevas tecnologías.
+                <br><br>
+                Actualmente, participo en el programa ONE de Oracle, donde adquiero 
+                conocimientos y habilidades en diferentes lenguajes y herramientas de programación.
+                 Mi objetivo es emprender en el mundo de la programación y crear aplicaciones web innovadoras 
+                 y de alta calidad. Estoy abierto a nuevas oportunidades laborales y a colaborar 
+                 con otros profesionales del sector, ya que me encanta trabajar en equipo y aprender
+                  de las experiencias de los demás.
+              
+            </p>
+            <div class="btn-box">
+                <a href="./Documents/Curriculum.pdf">Curriculum</a>
+                <a href="./subpaginas/contacto.html">Hablemos</a>
+            </div>
+        </div>
+        <!--Barra para mis redes sociales-->
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <!--Ejemplo de para la el css de boxicons, se exporta la clase "<i class='bx bxl-facebook'>"" y ya con eso se mostrara el icono-->
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></i></a>
+        </div>
+
+        <samp class="home-imgHover">
+
+        </samp>
+
+    </section>
 
 </body>
 
