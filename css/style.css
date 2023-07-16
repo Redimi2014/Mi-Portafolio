@@ -81,7 +81,7 @@ body {
 
 .home {
     height: 100vh;
-    background: url('./img/Fondo.png') no-repeat;
+    background: url('../img/Fondo.png') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -322,9 +322,9 @@ body {
     height: 100%;
     background: transparent;
     transition: 1s;
-  animation: manipActiveHover .1s forwards;
-  animation-delay: 4s;
-  pointer-events: none;
+    animation: manipActiveHover .1s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
 
 
 }
@@ -338,22 +338,22 @@ body {
     width: 100%;
     height: 100%;
     background: var(--color-Fondo);
-      animation: showRight 1s ease forwards;
+    animation: showRight 1s ease forwards;
     animation-delay: 1s;
     z-index: 100;
 }
 
 
 
-.el__Mio{
+.el__Mio {
     padding-left: 40px;
 }
 
 
 .home-content ._transition1 {
-    position: relative;   
-   
-   
+    position: relative;
+
+
 }
 
 
@@ -389,96 +389,99 @@ body {
 
 
 
-.fondo_boscuro{  /*Para colocar los puntos que estan en esta clase del color del fondo*/
-   color: var(--color-Fondo);  
+.fondo_boscuro {
+    /*Para colocar los puntos que estan en esta clase del color del fondo*/
+    color: var(--color-Fondo);
 }
 
 
 /********************************************************************************/
 /*Toda esta seccion es para el area de proyecto, pagina proyectos*/
-  
-  
-  /*Seccion que muestra Nuestros cursos (el cuerpo principal)*/
-  .contenidoPrincipal-cursos {
+
+
+/*Seccion que muestra Nuestros cursos (el cuerpo principal)*/
+.contenidoPrincipal-cursos {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .contenidoPrincipal-cursos-link {
+}
+
+.contenidoPrincipal-cursos-link {
     display: flex;
     width: 35%;
-    
-  }
- 
- 
+
+}
+
+
 
 .container {
-	width: 94%;
-	margin: 0 auto;
+    width: 94%;
+    margin: 0 auto;
 }
 
 
 .subtitulo {
-	font-weight: bold;
-	font-size: 32px;
-	margin-bottom: 10px;
-	text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .contenidoPrincipal-cursos-link {
-	
+
     height: 100px;
-	background-color: var(--color-Uno);
-	text-align: center;
-	margin: 1%;
-	transition: .3s;
-	box-shadow: 2px 2px 2pxvar(--color-Uno);
-	position: relative;
- background: url(../img/logos/github1.svg) no-repeat;	
-    background-position:top;
+    background-color: var(--color-Uno);
+    text-align: center;
+    margin: 1%;
+    transition: .3s;
+    box-shadow: 2px 2px 2pxvar(--color-Uno);
+    position: relative;
+    background: url(../img/logos/github1.svg) no-repeat;
+    background-position: top;
     background-size: 30%;
     background-color: var(--color-Uno);
- 
-   
+
+
 }
 
 
 
 
 .contenidoPrincipal-cursos-link a {
-    position: relative;   
-	text-decoration: none;
-	color: #000;
-	font-weight: bold;
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-   
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
 
 .contenidoPrincipal-cursos-link:hover {
-	border: 2px solid  var(--color-Uno);
+    border: 2px solid var(--color-Uno);
     background-color: var(--color-Fondo);
-    
-    
-    
+
+
+
 }
+
 .contenidoPrincipal-cursos-link a:hover {
     color: var(--color-Uno);
-   
+
 }
 
 
 .contenidoPrincipal-cursos-link a:before {
-	content: '';
-	display: block;
-	width: 50px;
-	height: 50px;
-	margin: 10px auto;
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
 }
+
 /*Imagenes de los item del proyecto
 .contenidoPrincipal-cursos-link:nth-child(even) a:before {
 	background: url(../img/logos/github1.svg) no-repeat;	
@@ -495,16 +498,16 @@ body {
 
 
 @media (max-width:768px) {
-     
+
     .contenidoPrincipal-cursos-link {
-      width: 100%;
-      /*Esto es para que los contenidos que tengan el nombre de esta clase se ajusten al tamaño total de la pagina*/
+        width: 100%;
+        /*Esto es para que los contenidos que tengan el nombre de esta clase se ajusten al tamaño total de la pagina*/
     }
-  
+
 
 
     .contenidoPrincipal-cursos-link a {
-        position: relative;   
+        position: relative;
         text-decoration: none;
         color: #000;
         font-weight: bold;
@@ -514,36 +517,40 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        background: url(../img/logos/github1.svg) no-repeat;	
-        background-position:top;
+        background: url(../img/logos/github1.svg) no-repeat;
+        background-position: top;
         background-size: 10%;
     }
 
-  
-  } /*llave de cierre del mediaquery*/
-  
+
+}
+
+/*llave de cierre del mediaquery*/
 
 
-@media(min-width: 1000px) {  /*centrar los margenes de cada elemento de la seccion mis proyectos*/
-	.contenidoPrincipal-cursos-link {
-		margin: 1.333%;
-	}
 
-	.contenidoPrincipal-cursos-link:nth-child(3n) {
-		margin-right: 1.33%;
-	}
+@media(min-width: 1000px) {
 
-	.contenidoPrincipal-cursos-link:nth-child(3n+1) {
-		margin-left: 1.333%;
-	}
+    /*centrar los margenes de cada elemento de la seccion mis proyectos*/
+    .contenidoPrincipal-cursos-link {
+        margin: 1.333%;
+    }
 
-	.contenidoPrincipal-cursos-link:nth-child(4n) {
-		margin-right: 0;
-	}
+    .contenidoPrincipal-cursos-link:nth-child(3n) {
+        margin-right: 1.33%;
+    }
 
-	.contenidoPrincipal-cursos-link:nth-child(4n+1) {
-		margin-left: 0;
-	}
+    .contenidoPrincipal-cursos-link:nth-child(3n+1) {
+        margin-left: 1.333%;
+    }
+
+    .contenidoPrincipal-cursos-link:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .contenidoPrincipal-cursos-link:nth-child(4n+1) {
+        margin-left: 0;
+    }
 
 }
 
@@ -587,7 +594,7 @@ body {
 
 
 @keyframes manipActiveHover {
-    100%{
+    100% {
         pointer-events: auto;
     }
 }
