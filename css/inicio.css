@@ -25,6 +25,8 @@
 
 /************************************************************/
 @media (max-width:547px) {
+
+
     .navbar a {
         font-size: 18px;
         color: var(--color-dos);
@@ -41,6 +43,35 @@
 
     }
 
+    .btn-box{
+        flex-direction: column; /* Cambio aquí: establecer flex-direction a column */
+        justify-content: space-between;
+        box-shadow: none;
+        align-items: center;
+        margin: 0 10%;
+    }
+    .btn-box a {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 100%;
+        background: var(--color-Uno);
+        border: 2px solid var(--color-Uno);
+        border-radius: 8px;
+        font-size: 19px;
+        color: var(--color-Fondo);
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        overflow: hidden;
+        transition: .5s;
+  
+
+
+    }
 
     
 }
@@ -214,6 +245,11 @@
         z-index: 2;
     }
 
+    .btn-box{
+     
+  
+
+    }
     .btn-box a {
         position: relative;
         display: inline-flex;
@@ -232,6 +268,8 @@
         z-index: 1;
         overflow: hidden;
         transition: .5s;
+  
+
 
     }
 
