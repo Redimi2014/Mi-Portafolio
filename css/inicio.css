@@ -1,0 +1,1031 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*Declaracion de variable*/
+
+:root {
+    --color-Uno: #f50987;
+    --color-Fondo: #01181f;
+    --color-dos: #ededed;
+}
+
+/*
+  #00abf0   var(--color-Uno)
+  #081b29 var(--color-Fondo)
+  #ededed var(--color-dos)
+  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/************************************************************/
+@media (max-width:547px) {
+    .navbar a {
+        font-size: 18px;
+        color: var(--color-dos);
+        text-decoration: none;
+        font-weight: 500;
+     
+
+   display: flex;
+        flex-direction: column; /* Cambio aquí: establecer flex-direction a column */
+          justify-content: space-between;
+          align-items: center;
+          box-shadow: none;
+
+
+    }
+
+
+    
+}
+
+
+/*crear Fragmento de animacion*/
+@media (max-width:767px) {
+
+
+
+    body {
+        background: var(--color-Fondo);
+        color: var(--color-dos);
+
+    }
+
+    .header {
+
+        display: flex;
+        flex-direction: column; /* Cambio aquí: establecer flex-direction a column */
+          justify-content: space-between;
+          box-shadow: none;
+          align-items: center;
+          margin: 0 10%;
+    }
+
+    .logo {
+
+        position: relative;
+        font-size: 25px;
+        color: var(--color-dos);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .logo::before {
+        /*Transicion para el logo*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+        ;
+        animation: showRight 1s ease forwards;
+        animation-delay: .4s;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        color: var(--color-dos);
+        text-decoration: none;
+        font-weight: 500;
+     
+        margin: 0 1vb;
+
+
+    }
+
+
+    .navbar a:hover,
+    .navbar a.active {
+        /*hover se es una funcion para cuando el mouse esta ensima del objeto se ejecute, se le puso una copa para indicar que el que esta en la clase active siempre se ejecutara*/
+
+        color: var(--color-Uno);
+        transition: .3s;
+        /*Es el tiempo en que estara ocurriendo el proceso*/
+    }
+
+    .home {
+        height: 100vh;
+
+        padding: 0 0;
+
+        margin: 0 10%;
+    }
+
+    .home-content {
+        /*Clase contenido del inicio*/
+        max-width: 600px;
+    }
+
+    /*Aqui se selecciona la clase y al objeto dentro de esa clase que se editara*/
+    .home-content h1 {
+        position: relative;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .home-content h1::before {
+        /*Transicion para el texto H1*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+
+        animation: showRight 1s ease forwards;
+        animation-delay: 1s;
+    }
+
+    .home-content h3 {
+        position: relative;
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--color-Uno);
+        text-align: center;
+
+    }
+
+    .home-content h3::before {
+        /*Transicion para el texto H3*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.3s;
+    }
+
+    .home-content p {
+        position: relative;
+        font-size: 16px;
+        margin: 20px 0 40px;
+        text-align: justify;
+    }
+
+    .home-content p::before {
+        /*Transicion para el objeto "p" dentro del home-content*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.6s;
+    }
+
+    .home-content .btn-box {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 345px;
+        height: 50px;
+    }
+
+
+    .home-content .btn-box::before {
+        /*Transicion para el texto H1*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.9s;
+        z-index: 2;
+    }
+
+    .btn-box a {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 100%;
+        background: var(--color-Uno);
+        border: 2px solid var(--color-Uno);
+        border-radius: 8px;
+        font-size: 19px;
+        color: var(--color-Fondo);
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        overflow: hidden;
+        transition: .5s;
+
+    }
+
+    .btn-box a:hover {
+        color: var(--color-Uno);
+    }
+
+    .btn-box a:nth-child(2) {
+        background: transparent;
+        /*Darle trasparencia al fondo del boton*/
+        color: var(--color-Uno);
+        /*Darle trapsarencia al texto del boton*/
+
+    }
+
+    .btn-box a:nth-child(2):hover {
+        color: var(--color-Fondo);
+    }
+
+    .btn-box a:nth-child(2)::before {
+        background: var(--color-Uno);
+
+    }
+
+
+    .btn-box a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: var(--color-Fondo);
+        z-index: -1;
+        transition: .5s;
+    }
+
+    .btn-box a:hover::before {
+        width: 100%;
+    }
+
+
+    .home-sci {
+        position: absolute;
+        bottom: 40px;
+        width: 170px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .home-sci::before {
+        /*Transicion para el texto H1*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+        animation: showRight 1s ease forwards;
+        animation-delay: 2.5s;
+        z-index: 2;
+    }
+
+
+    .home-sci a {
+        /*Esto es para darle diseño y color a los iconones entro de la clase home-sic en los objetos a*/
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid var(--color-Uno);
+        border-radius: 50%;
+        font-size: 20px;
+        color: var(--color-Uno);
+        text-decoration: none;
+        z-index: 1;
+        overflow: hidden;
+        /*Para que el color de la transicion que queda fuera del radio del boton quede oculto*/
+        transition: .5s;
+    }
+
+
+
+    .home-sci a:hover {
+        color: var(--color-Fondo);
+
+
+    }
+
+
+    .home-sci a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: var(--color-Uno);
+        z-index: -1;
+        transition: .5s;
+
+    }
+
+    .home-sci a:hover:before {
+        width: 100%;
+
+    }
+
+
+
+    /*Aca es la seccion de spam*/
+    .home-imgHover {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        width: 650px;
+        height: 100%;
+        background: transparent;
+        transition: 1s;
+        animation: manipActiveHover .1s forwards;
+        animation-delay: 4s;
+        pointer-events: none;
+
+
+    }
+
+    .home-imgHover::after {
+        /*Transicion para el texto H1*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+        animation: showRight 1s ease forwards;
+        animation-delay: 1s;
+        z-index: 100;
+    }
+
+
+
+    .el__Mio {
+        padding-left: 40px;
+    }
+
+
+    .home-content ._transition1 {
+        position: relative;
+
+
+    }
+
+
+    .home-content ._transition1::before {
+        /*Transicion para el texto H3*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.8s;
+    }
+
+
+
+    .home-content .contenidoPrincipal-cursos-link::before {
+        /*Transicion para el texto H3*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.8s;
+    }
+
+
+
+    .fondo_boscuro {
+        /*Para colocar los puntos que estan en esta clase del color del fondo*/
+        color: var(--color-Fondo);
+    }
+
+
+    /********************************************************************************/
+    /*Toda esta seccion es para el area de proyecto, pagina proyectos*/
+
+
+    /*Seccion que muestra Nuestros cursos (el cuerpo principal)*/
+    .contenidoPrincipal-cursos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contenidoPrincipal-cursos-link {
+        display: flex;
+        width: 35%;
+
+    }
+
+
+
+    .container {
+        width: 94%;
+        margin: 0 auto;
+    }
+
+
+    .subtitulo {
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .contenidoPrincipal-cursos-link {
+
+        height: 100px;
+        background-color: var(--color-Uno);
+        text-align: center;
+        margin: 1%;
+        transition: .3s;
+        box-shadow: 2px 2px 2pxvar(--color-Uno);
+        position: relative;
+        background: url(../img/logos/github1.svg) no-repeat;
+        background-position: top;
+        background-size: 30%;
+        background-color: var(--color-Uno);
+
+
+    }
+
+
+
+
+    .contenidoPrincipal-cursos-link a {
+        position: relative;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+
+    .contenidoPrincipal-cursos-link:hover {
+        border: 2px solid var(--color-Uno);
+        background-color: var(--color-Fondo);
+
+
+
+    }
+
+    .contenidoPrincipal-cursos-link a:hover {
+        color: var(--color-Uno);
+
+    }
+
+
+    .contenidoPrincipal-cursos-link a:before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 10px auto;
+    }
+
+    /*Imagenes de los item del proyecto
+    .contenidoPrincipal-cursos-link:nth-child(even) a:before {
+        background: url(../img/logos/github1.svg) no-repeat;	
+        background-position: center;
+        background-size: 100%;
+    }
+    
+    .contenidoPrincipal-cursos-link:nth-child(odd) a:before {
+        background: url(../img/background1.svg) no-repeat;
+    }
+    */
+
+
+
+
+
+    @keyframes showRight {
+        100% {
+            width: 0;
+        }
+    }
+
+
+}
+
+
+
+@media (min-width:768px) {
+
+    body {
+        background: var(--color-Fondo);
+        color: var(--color-dos);
+
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10%;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .logo {
+
+        position: relative;
+        font-size: 25px;
+        color: var(--color-dos);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .logo::before {
+        /*Transicion para el logo*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+        ;
+        animation: showRight 1s ease forwards;
+        animation-delay: .4s;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        color: var(--color-dos);
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 35px;
+    }
+
+
+    .navbar a:hover,
+    .navbar a.active {
+        /*hover se es una funcion para cuando el mouse esta ensima del objeto se ejecute, se le puso una copa para indicar que el que esta en la clase active siempre se ejecutara*/
+
+        color: var(--color-Uno);
+        transition: .3s;
+        /*Es el tiempo en que estara ocurriendo el proceso*/
+    }
+
+    .home {
+        height: 100vh;
+        background: url('../img/Fondo.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+    }
+
+    .home-content {
+        /*Clase contenido del inicio*/
+        max-width: 600px;
+    }
+
+    /*Aqui se selecciona la clase y al objeto dentro de esa clase que se editara*/
+    .home-content h1 {
+        position: relative;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .home-content h1::before {
+        /*Transicion para el texto H1*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+
+        animation: showRight 1s ease forwards;
+        animation-delay: 1s;
+    }
+
+    .home-content h3 {
+        position: relative;
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--color-Uno);
+    }
+
+    .home-content h3::before {
+        /*Transicion para el texto H3*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.3s;
+    }
+
+    .home-content p {
+        position: relative;
+        font-size: 16px;
+        margin: 20px 0 40px;
+    }
+
+    .home-content p::before {
+        /*Transicion para el objeto "p" dentro del home-content*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.6s;
+    }
+
+    .home-content .btn-box {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 345px;
+        height: 50px;
+    }
+
+
+    .home-content .btn-box::before {
+        /*Transicion para el texto H1*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.9s;
+        z-index: 2;
+    }
+
+    .btn-box a {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 100%;
+        background: var(--color-Uno);
+        border: 2px solid var(--color-Uno);
+        border-radius: 8px;
+        font-size: 19px;
+        color: var(--color-Fondo);
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        overflow: hidden;
+        transition: .5s;
+
+    }
+
+    .btn-box a:hover {
+        color: var(--color-Uno);
+    }
+
+    .btn-box a:nth-child(2) {
+        background: transparent;
+        /*Darle trasparencia al fondo del boton*/
+        color: var(--color-Uno);
+        /*Darle trapsarencia al texto del boton*/
+
+    }
+
+    .btn-box a:nth-child(2):hover {
+        color: var(--color-Fondo);
+    }
+
+    .btn-box a:nth-child(2)::before {
+        background: var(--color-Uno);
+
+    }
+
+
+    .btn-box a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: var(--color-Fondo);
+        z-index: -1;
+        transition: .5s;
+    }
+
+    .btn-box a:hover::before {
+        width: 100%;
+    }
+
+
+    .home-sci {
+        position: absolute;
+        bottom: 40px;
+        width: 170px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .home-sci::before {
+        /*Transicion para el texto H1*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+        animation: showRight 1s ease forwards;
+        animation-delay: 2.5s;
+        z-index: 2;
+    }
+
+
+    .home-sci a {
+        /*Esto es para darle diseño y color a los iconones entro de la clase home-sic en los objetos a*/
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid var(--color-Uno);
+        border-radius: 50%;
+        font-size: 20px;
+        color: var(--color-Uno);
+        text-decoration: none;
+        z-index: 1;
+        overflow: hidden;
+        /*Para que el color de la transicion que queda fuera del radio del boton quede oculto*/
+        transition: .5s;
+    }
+
+
+
+    .home-sci a:hover {
+        color: var(--color-Fondo);
+
+
+    }
+
+
+    .home-sci a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: var(--color-Uno);
+        z-index: -1;
+        transition: .5s;
+
+    }
+
+    .home-sci a:hover:before {
+        width: 100%;
+
+    }
+
+
+
+    /*Aca es la seccion de spam*/
+    .home-imgHover {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        width: 650px;
+        height: 100%;
+        background: transparent;
+        transition: 1s;
+        animation: manipActiveHover .1s forwards;
+        animation-delay: 4s;
+        pointer-events: none;
+
+
+    }
+
+    .home-imgHover::after {
+        /*Transicion para el texto H1*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+        animation: showRight 1s ease forwards;
+        animation-delay: 1s;
+        z-index: 100;
+    }
+
+
+
+    .el__Mio {
+        padding-left: 40px;
+    }
+
+
+    .home-content ._transition1 {
+        position: relative;
+
+
+    }
+
+
+    .home-content ._transition1::before {
+        /*Transicion para el texto H3*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.8s;
+    }
+
+
+
+    .home-content .contenidoPrincipal-cursos-link::before {
+        /*Transicion para el texto H3*/
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-Fondo);
+
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.8s;
+    }
+
+
+
+    .fondo_boscuro {
+        /*Para colocar los puntos que estan en esta clase del color del fondo*/
+        color: var(--color-Fondo);
+    }
+
+
+    /********************************************************************************/
+    /*Toda esta seccion es para el area de proyecto, pagina proyectos*/
+
+
+    /*Seccion que muestra Nuestros cursos (el cuerpo principal)*/
+    .contenidoPrincipal-cursos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contenidoPrincipal-cursos-link {
+        display: flex;
+        width: 35%;
+
+    }
+
+
+
+    .container {
+        width: 94%;
+        margin: 0 auto;
+    }
+
+
+    .subtitulo {
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .contenidoPrincipal-cursos-link {
+
+        height: 100px;
+        background-color: var(--color-Uno);
+        text-align: center;
+        margin: 1%;
+        transition: .3s;
+        box-shadow: 2px 2px 2pxvar(--color-Uno);
+        position: relative;
+        background: url(../img/logos/github1.svg) no-repeat;
+        background-position: top;
+        background-size: 30%;
+        background-color: var(--color-Uno);
+
+
+    }
+
+
+
+
+    .contenidoPrincipal-cursos-link a {
+        position: relative;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+
+    .contenidoPrincipal-cursos-link:hover {
+        border: 2px solid var(--color-Uno);
+        background-color: var(--color-Fondo);
+
+
+
+    }
+
+    .contenidoPrincipal-cursos-link a:hover {
+        color: var(--color-Uno);
+
+    }
+
+
+    .contenidoPrincipal-cursos-link a:before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 10px auto;
+    }
+
+    /*Imagenes de los item del proyecto
+    .contenidoPrincipal-cursos-link:nth-child(even) a:before {
+        background: url(../img/logos/github1.svg) no-repeat;	
+        background-position: center;
+        background-size: 100%;
+    }
+    
+    .contenidoPrincipal-cursos-link:nth-child(odd) a:before {
+        background: url(../img/background1.svg) no-repeat;
+    }
+    */
+
+    @keyframes showRight {
+        100% {
+            width: 0;
+        }
+    }
+
+
+
+
+}
