@@ -67,9 +67,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: var(--color-Fondo);
-        ;
-        animation: showRight 1s ease forwards;
+             animation: showRight 1s ease forwards;
         animation-delay: .4s;
     }
 
@@ -122,8 +120,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: var(--color-Fondo);
-
+     
         animation: showRight 1s ease forwards;
         animation-delay: 1s;
     }
@@ -145,7 +142,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: var(--color-Fondo);
+    
 
         animation: showRight 1s ease forwards;
         animation-delay: 1.3s;
@@ -169,7 +166,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: var(--color-Fondo);
+   
 
         animation: showRight 1s ease forwards;
         animation-delay: 1.6s;
@@ -192,9 +189,9 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: var(--color-Fondo);
-        animation: showRight 1s ease forwards;
-        animation-delay: 1.9s;
+      
+        animation: showRight s ease forwards;
+        animation-delay: 0s;
         z-index: 2;
     }
 
@@ -377,7 +374,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: var(--color-Fondo);
+        background: transparent;
         animation: showRight 1s ease forwards;
         animation-delay: 1s;
         z-index: 100;
@@ -1154,16 +1151,18 @@
 
     }
 
-
     #navbar {
-        display: none; /* Ocultar el menú inicialmente */
+        display: none;
+    
+        transition: transform 1.5s;
     }
     
-    /* Estilo de transición suave */
     #navbar.active {
         display: block;
-        transition: display 0.5s;
+        transition: transform 1.5s;
     }
+    
+    
 
 
 }
