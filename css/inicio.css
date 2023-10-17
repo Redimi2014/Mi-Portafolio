@@ -49,7 +49,7 @@
 
     }*/
 
-    .header{
+    .header {
         margin-top: 2vb;
     }
 
@@ -70,7 +70,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-             animation: showRight 1s ease forwards;
+        animation: showRight 1s ease forwards;
         animation-delay: .4s;
     }
 
@@ -82,8 +82,7 @@
         margin-left: 35px;
     }
 
-
-
+  
 
     .navbar a:hover,
     .navbar a.active {
@@ -125,7 +124,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-     
+
         animation: showRight 1s ease forwards;
         animation-delay: 1s;
     }
@@ -147,14 +146,15 @@
         right: 0;
         width: 100%;
         height: 100%;
-    
+
 
         animation: showRight 1s ease forwards;
         animation-delay: 1.3s;
     }
+
     .barraa-titulo {
-        display:none;
-          }
+        display: none;
+    }
 
     .home-content p {
         position: relative;
@@ -171,7 +171,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-   
+
 
         animation: showRight 1s ease forwards;
         animation-delay: 1.6s;
@@ -194,7 +194,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-      
+
         animation: showRight s ease forwards;
         animation-delay: 0s;
         z-index: 2;
@@ -353,7 +353,7 @@
 
     }
 
-    .home-sci__ocultar2{
+    .home-sci__ocultar2 {
         display: none;
     }
 
@@ -541,8 +541,9 @@
 
 
 
+ 
 
-  
+
 
 }
 
@@ -563,18 +564,19 @@
 
     }
 
-.imagen-fondo{
-    background: url('../img/Fondo.png') no-repeat;
-    background-size:cover; /* Cambiar a "contain" en lugar de "cover" */
+    .imagen-fondo {
+        background: url('../img/Fondo.png') no-repeat;
+        background-size: cover;
+        /* Cambiar a "contain" en lugar de "cover" */
 
-    background-position: center;
-  
+        background-position: center;
 
-}
+
+    }
 
     .barraa-titulo {
-        display:none;
-          }
+        display: none;
+    }
 
     .header {
         /* position: fixed; /*para colocar el menu flotante*/
@@ -596,6 +598,7 @@
         color: var(--color-dos);
         text-decoration: none;
         font-weight: 600;
+
     }
 
     .logo::before {
@@ -630,8 +633,8 @@
     }
 
     .home {
- 
-     /*   background: url('../img/Fondo.png') no-repeat;
+
+        /*   background: url('../img/Fondo.png') no-repeat;
         background-size: contain; /* Cambiar a "contain" en lugar de "cover" */
 
         background-size: cover;
@@ -639,7 +642,7 @@
         display: flex;
         align-items: center;
         padding: 0 10%;
-    
+
 
     }
 
@@ -664,7 +667,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background:  var(--color-Fondo);
+        background: var(--color-Fondo);
 
         animation: showRight 1s ease forwards;
         animation-delay: 1s;
@@ -685,7 +688,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background:  var(--color-Fondo);
+        background: var(--color-Fondo);
 
         animation: showRight 1s ease forwards;
         animation-delay: 1.3s;
@@ -705,7 +708,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background:  var(--color-Fondo);
+        background: var(--color-Fondo);
 
         animation: showRight 1s ease forwards;
         animation-delay: 1.6s;
@@ -728,7 +731,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background:  var(--color-Fondo);
+        background: var(--color-Fondo);
         animation: showRight 1s ease forwards;
         animation-delay: 1.9s;
         z-index: 2;
@@ -794,35 +797,36 @@
     }
 
     .home-sci {
-       /* position: absolute;*/
+        /* position: absolute;*/
         bottom: 40px;
         width: 100%;
         display: flex;
-            padding: 0 10%;
+        padding: 0 10%;
     }
-.home-sci__ocultar2 a{
-margin-left: 2vb;
-}
+
+    .home-sci__ocultar2 a {
+        margin-left: 2vb;
+    }
 
     .home-sci::before {
         /*Transicion para el texto H1*/
-      /*  content: '';
+        /*  content: '';
         position: absolute;*/
         top: 0;
         right: 0;
         width: 100%;
         height: 100%;
-     
-        background:  var(--color-Fondo);
+
+        background: var(--color-Fondo);
         animation: showRight 1s ease forwards;
         animation-delay: 2.5s;
         z-index: 2;
     }
 
-    .home-sci__ocultar1{
+    .home-sci__ocultar1 {
         display: none;
     }
-    
+
 
     .home-sci a {
         /*Esto es para darle diseño y color a los iconones entro de la clase home-sic en los objetos a*/
@@ -897,7 +901,7 @@ margin-left: 2vb;
         right: 0;
         width: 100%;
         height: 100%;
-        background:  var(--color-Fondo);
+        background: var(--color-Fondo);
         animation: showRight 2s ease forwards;
         animation-delay: 0.2s;
         z-index: 100;
@@ -1082,8 +1086,8 @@ margin-left: 2vb;
 
     .header {
 
-    margin-top: 0;
-     
+        margin-top: 0;
+
 
     }
 
@@ -1091,7 +1095,7 @@ margin-left: 2vb;
         display: flex;
         justify-content: space-between;
 
-        background-color:var(--color-Uno);
+        background-color: var(--color-Uno);
 
         box-shadow: 0 0 10px 5px #00000080;
 
@@ -1104,15 +1108,15 @@ margin-left: 2vb;
         color: var(--color-dos);
         text-decoration: none;
         font-weight: 600;
-     
+
         padding: 1vb 2vb;
-   
+
 
     }
 
-.logo{
-    margin: 0.5vb 1vb;
-}
+    .logo {
+        margin: 0.5vb 1vb;
+    }
 
 
     .barraa-titulo__menu::before {
@@ -1123,7 +1127,7 @@ margin-left: 2vb;
         right: 0;
         width: 100%;
         height: 100%;
-    
+
         ;
         animation: showRight 1s ease forwards;
         animation-delay: .4s;
@@ -1184,16 +1188,18 @@ margin-left: 2vb;
 
     #navbar {
         display: none;
-    
+
         transition: transform 1.5s;
     }
-    
+
     #navbar.active {
         display: block;
         transition: transform 1.5s;
     }
-    
-    
+    .navbar .ocultarinicio {
+        display: none;
+    }
+
 
 
 }
