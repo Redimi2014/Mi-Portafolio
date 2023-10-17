@@ -33,6 +33,7 @@
   align-items: center;
 background: #01181f;
   overflow: hidden;
+  top: -25px;
 }
 
 .swiper {
@@ -135,4 +136,34 @@ color:var(--color-Uno);
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
   background-image: none;
+}
+
+
+
+
+@media (max-width:600px) {
+ 
+.micarrusel {
+  position: relative;
+  width: 100%;
+  min-height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background: #01181f;
+  overflow: hidden;
+  top: -5px;
+}
+
+
+  .swiper-slide {
+    width: 300px;
+    height: 500px;
+
+    margin-bottom: -18vb;
+  }
+
+
+
+
 }
