@@ -1155,5 +1155,15 @@
     }
 
 
+    #navbar {
+        display: none; /* Ocultar el menú inicialmente */
+    }
+    
+    /* Estilo de transición suave */
+    #navbar.active {
+        display: block;
+        transition: display 0.5s;
+    }
+
 
 }

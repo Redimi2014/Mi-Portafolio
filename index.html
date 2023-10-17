@@ -11,61 +11,72 @@
     <!--Este CSS nos servira para utilizar los iconos de la pagina https://boxicons.com en el buscador buscamos el icono que querramos le damos un clic luego en font y copiamos la clase-->
 
 </head>
-<!--Barra para mi Menu-->
+<header class="header">
+    <nav class="barraa-titulo">
+        <a href="./" class="barraa-titulo__menu"><i class='bx bx-home-alt'></i></a>
+        <a href="./" class="logo">Rey.</a>
+        <a class="barraa-titulo__menu" id="menu-toggle-left"><i class='bx bx-menu'></i></a>
+    </nav>
+    
+    <nav class="navbar" id="navbar">
+        <a href="./index.html" class="active">Inicio</a>
+        <a href="./subpaginas/skills1.html">Skills</a>
+        <a href="./subpaginas/formacion.html">Formación</a>
+        <a href="./subpaginas/proyectos.html">Proyectos</a>
+        <a href="./subpaginas/contacto.html">Contacto</a>
+    </nav>
+</header>
 
-<body>
-    <header class="header">
-        <nav class="barraa-titulo">
-            <a href="./" class="barraa-titulo__menu"><i class='bx bx-home-alt'></i></a>
-            <a href="./" class="logo">Rey.</a>
-            <a href="" class="barraa-titulo__menu"><i class='bx bx-menu'></i></a>
-        </nav>
-        
-        <nav class="navbar">
-            <a href="./index.html" class="active">Inicio</a>
-            <a href="./subpaginas/skills1.html">Skills</a>
-            <a href="./subpaginas/formacion.html">Formación</a>
-            <a href="./subpaginas/proyectos.html">Proyectos</a>
-            <a href="./subpaginas/contacto.html">Contacto</a>
-        </nav>
-    </header>
-    <!--Barra para mi Portada-->
-    <section class="home">
-        <!--Para crear un objeto con una clase se pone el nombre del objeto un punto y luego el nombre de la clase, ejemplo section.home-->
-        <div class="home-content">
-            <h1>Hola, soy Reymond Perez</h1>
-            <h3>Desarrollador Frontend</h3>
-            <p>
-                Soy licenciado en Informática con una verdadera pasión por la
-                programación, Mas en el ámbito front-end. A lo largo de mi carrera,
-                he adquirido experiencia en el área de programación y soporte técnico.
-                Soy una persona proactiva, creativa y siempre con ganas de aprender
-                nuevas tecnologías.
-                <br><br>
-                Participo en el programa ONE de Oracle, Mi objetivo es emprender
-                en el mundo de la programación y crear aplicaciones web innovadoras
-                y de alta calidad. Estoy abierto a nuevas oportunidades laborales y a colaborar
-                con otros profesionales del sector.
-            <div class="btn-box">
-                <a href="https://www.canva.com/design/DAFxbq37TLQ/EpeXxUGnxvvEzOKgLql-tw/edit?utm_content=DAFxbq37TLQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Curriculum</a>
-                <a href="./subpaginas/contacto.html">Hablemos</a>
-            </div>
-            </p>
 
+<!--Barra para mi Portada-->
+<section class="home">
+    <!--Para crear un objeto con una clase se pone el nombre del objeto un punto y luego el nombre de la clase, ejemplo section.home-->
+    <div class="home-content">
+        <h1>Hola, soy Reymond Perez</h1>
+        <h3>Desarrollador Frontend</h3>
+        <p>
+            Soy licenciado en Informática con una verdadera pasión por la
+            programación, Mas en el ámbito front-end. A lo largo de mi carrera,
+            he adquirido experiencia en el área de programación y soporte técnico.
+            Soy una persona proactiva, creativa y siempre con ganas de aprender
+            nuevas tecnologías.
+            <br><br>
+            Participo en el programa ONE de Oracle, Mi objetivo es emprender
+            en el mundo de la programación y crear aplicaciones web innovadoras
+            y de alta calidad. Estoy abierto a nuevas oportunidades laborales y a colaborar
+            con otros profesionales del sector.
+        <div class="btn-box">
+            <a href="https://www.canva.com/design/DAFxbq37TLQ/EpeXxUGnxvvEzOKgLql-tw/edit?utm_content=DAFxbq37TLQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                target="_blank">Curriculum</a>
+            <a href="./subpaginas/contacto.html">Hablemos</a>
         </div>
-        <!--Barra para mis redes sociales-->
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <!--Ejemplo de para la el css de boxicons, se exporta la clase "<i class='bx bxl-facebook'>"" y ya con eso se mostrara el icono-->
-            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></i></a>
-        </div>
+        </p>
 
-        <samp class="home-imgHover">
+    </div>
+    <!--Barra para mis redes sociales-->
+    <div class="home-sci">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <!--Ejemplo de para la el css de boxicons, se exporta la clase "<i class='bx bxl-facebook'>"" y ya con eso se mostrara el icono-->
+        <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></i></a>
+    </div>
 
-        </samp>
+    <samp class="home-imgHover">
 
-    </section>
+    </samp>
+
+</section>
+
+<script>
+
+
+    document.getElementById('menu-toggle-left').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevenir la acción predeterminada del enlace
+        var navbar = document.getElementById('navbar');
+        navbar.classList.toggle('active'); // Alternar la clase 'active' en el menú
+    });
+
+</script>
 
 </body>
 
