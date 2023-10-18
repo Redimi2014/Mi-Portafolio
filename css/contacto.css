@@ -24,18 +24,11 @@
 }
 
 
-.home-sci__ocultar2 {
 
-    display: flex;
-    width: 42%;
-
-    align-items: center;
-    justify-content: space-between;
-}
 
 
 .home-sci__ocultar2 a {
-    margin-left: 2vb;
+ margin: 0 1.2rem;
 }
 
 
