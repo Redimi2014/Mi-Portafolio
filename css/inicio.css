@@ -1210,7 +1210,7 @@
     background-color:var(--color-Uno);
     color: var(--color-Fondo);
     border-radius: 0.3rem;
-    
+    transition: all 0.5s;
 }
 .navbar .Active-curriculum i{
  font-size: 0.9rem;
@@ -1219,9 +1219,11 @@
    
 
 .navbar .Active-curriculum:hover{
- 
+    padding: 0.5rem 1.5rem;
     background-color:var(--color-Uno);
     color: var(--color-dos);
+    border-radius: 1rem;
+    transition: all 0.5s;
 }
 
 
