@@ -1204,5 +1204,26 @@
 
 }
 
+/*Boton del curriculo*/
+.navbar .Active-curriculum{
+ padding: 0 1rem;
+    background-color:var(--color-Uno);
+    color: var(--color-Fondo);
+    border-radius: 0.3rem;
+    
+}
+.navbar .Active-curriculum i{
+ font-size: 0.9rem;
+       
+   }
+   
+
+.navbar .Active-curriculum:hover{
+ 
+    background-color:var(--color-Uno);
+    color: var(--color-dos);
+}
+
+
 
 /*---------------------------------------------------*/
