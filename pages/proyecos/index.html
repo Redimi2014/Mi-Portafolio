@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../../css/inicio.css">
     <link rel="stylesheet" href="../../css/proyectos.css">
-
+    <link rel="stylesheet" href="../../css/sub-menu_proyectos.css">
     <!--Este CSS nos servira para utilizar los iconos de la pagina https://boxicons.com en el buscador buscamos el icono que querramos le damos un clic luego en font y copiamos la clase-->
 
 </head>
@@ -37,8 +37,35 @@
 
     </header>
     <!--Seccion del contenido-->
+    <!--Sub menu-->
+    <nav class="submenu">
+        <label for="menu-toggle">Selecciona un proyecto:</label>
+        <select id="menu-toggle">
+            <option value="proyecto-frontend">Proyectos HTML CSS JS</option>
+            <option value="proyecto-csharp">Proyectos CSharp.Net</option>
+            <option value="proyecto-vbnet">Proyectos Visual Basic.Net</option>
+            <option value="proyecto-maui">Proyectos Maui.Net</option>
+        </select>
+    </nav>
 
     <!--Galeria de los productos-->
+
+    <section class="section-proyecto_frontend">
+ <a>12</a>
+    </section>
+
+    <section class="section-proyecto_csharpnet">
+        <a >2</a>
+    </section>
+
+    <section class="section-proyecto_vbnet">
+        <a >3</a>
+    </section>
+
+    <section class="section-proyecto_maui">
+        <a >4</a>
+    </section>
+
     <main class="main">
         <div class="container">
             <h2 class="main-title">Novedades para ti</h2>
@@ -80,11 +107,34 @@
                 </div>
             </section>
         </div>
-
+    </main>
 
 </body>
 
 <script src="../../js/mostrar-menu.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("menu-toggle");
+
+        menuToggle.addEventListener("change", function () {
+            const selectedValue = menuToggle.value;
+
+            // Oculta todas las secciones
+            const sections = document.querySelectorAll("section");
+            sections.forEach(function (section) {
+                section.style.display = "none";
+            });
+
+            // Muestra la sección seleccionada
+            const selectedSection = document.querySelector(`.${selectedValue}`);
+            if (selectedSection) {
+                selectedSection.style.display = "block";
+            }
+        });
+    });
+
+</script>
 
 </body>
 

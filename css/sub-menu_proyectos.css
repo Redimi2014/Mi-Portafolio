@@ -1,0 +1,13 @@
+/* Agrega estilos para el menú desplegable */
+.submenu {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Oculta todas las secciones iniciales */
+.section-proyecto_frontend,
+.section-proyecto_csharpnet,
+.section-proyecto_vbnet,
+.section-proyecto_maui {
+    display: none;
+}
