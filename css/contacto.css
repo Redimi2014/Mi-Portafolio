@@ -1,0 +1,49 @@
+.imagen-fondo{
+    height: 49rem;
+    width: 100%;
+    
+    /* Cambiar a "contain" en lugar de "cover" */
+
+    background-position: center;
+    
+}
+.home {
+    margin-top: 5rem;
+}
+
+.home-content h3 {
+  
+    text-align: center;
+
+}
+
+.home-content h4 {
+  
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.home-sci__ocultar2 {
+
+    display: flex;
+    width: 42%;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.home-sci__ocultar2 a {
+    margin-left: 2vb;
+}
+
+
+@media (max-width:767px) {
+
+
+    .home-sci__ocultar2{
+        display: none;
+    }
+
+}
