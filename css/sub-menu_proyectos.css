@@ -1,8 +1,9 @@
-/* Agrega estilos para el menú desplegable */
-.submenu {
-    text-align: center;
-    margin: 20px;
+:root {
+    --color-Uno: #f50987;
+    --color-Fondo: #01181f;
+    --color-dos: #ededed;
 }
+
 
 /* Oculta todas las secciones iniciales */
 .section-proyecto_frontend,
@@ -10,4 +11,96 @@
 .section-proyecto_vbnet,
 .section-proyecto_maui {
     display: none;
+}
+
+
+.button-sub__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10%;
+
+
+}
+
+.button-sub__menu h2 {
+
+    text-align: center;
+
+}
+
+.contenido-sub__menu {
+    display: flex;
+    justify-content: center;
+
+}
+
+.button-sub__menu button {
+    all: initial;
+
+    text-decoration: none;
+    background-color: var(--color-Fondo);
+    color: var(--color-dos);
+    border: solid 0.1rem var(--color-Uno);
+    width: 10rem;
+    height: 2rem;
+    text-align: center;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+}
+
+
+/* Estilo para botones seleccionados */
+.button-sub__menu button.selected {
+    background-color: var(--color-Uno);
+    /* Cambia a tu color deseado */
+    color: var(--color-dos);
+    border: none;
+}
+
+
+@media (max-width:600px) {
+
+    .button-sub__menu {
+
+        margin-left: 10%;
+        margin-right: 5%;
+
+    }
+
+
+    .contenido-sub__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .button-sub__menu button {
+        border: none;
+        border-bottom: solid 0.1rem var(--color-Uno);
+
+        width: 100%;
+
+        transition: all 0.5s;
+    }
+
+    .contenido-sub__menu .border-boton__superior {
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+    border-top: solid 0.1rem var(--color-Uno);
+        transition: all 0.5s;
+    }
+
+    .contenido-sub__menu .border-boton__inferior {
+
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        transition: all 0.5s;
+    }
+
+
+
+
 }

@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="../../css/inicio.css">
     <link rel="stylesheet" href="../../css/proyectos.css">
     <link rel="stylesheet" href="../../css/sub-menu_proyectos.css">
-    <!--Este CSS nos servira para utilizar los iconos de la pagina https://boxicons.com en el buscador buscamos el icono que querramos le damos un clic luego en font y copiamos la clase-->
+    <!-- Este CSS nos servirá para utilizar los iconos de la página https://boxicons.com en el buscador. Buscamos el icono que queramos, le damos un clic, luego en font y copiamos la clase. -->
 
 </head>
 
 <body>
 
-    <!--Seccion del menu-->
+    <!-- Sección del menú -->
     <header class="header">
         <nav class="barraa-titulo">
             <a href="./" class="barraa-titulo__menu"><i class='bx bx-home-alt'></i></a>
@@ -34,107 +34,118 @@
                 href="https://www.canva.com/design/DAFxbq37TLQ/EpeXxUGnxvvEzOKgLql-tw/edit?utm_content=DAFxbq37TLQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                 target="_blank"><i class='bx bxs-download'></i> Curriculum <i class='bx bxs-download'></i> </a>
         </nav>
-
     </header>
-    <!--Seccion del contenido-->
-    <!--Sub menu-->
-    <nav class="submenu">
-        <label for="menu-toggle">Selecciona un proyecto:</label>
-        <select id="menu-toggle">
-            <option value="proyecto-frontend">Proyectos HTML CSS JS</option>
-            <option value="proyecto-csharp">Proyectos CSharp.Net</option>
-            <option value="proyecto-vbnet">Proyectos Visual Basic.Net</option>
-            <option value="proyecto-maui">Proyectos Maui.Net</option>
-        </select>
-    </nav>
 
-    <!--Galeria de los productos-->
-
-    <section class="section-proyecto_frontend">
- <a>12</a>
-    </section>
-
-    <section class="section-proyecto_csharpnet">
-        <a >2</a>
-    </section>
-
-    <section class="section-proyecto_vbnet">
-        <a >3</a>
-    </section>
-
-    <section class="section-proyecto_maui">
-        <a >4</a>
-    </section>
-
-    <main class="main">
-        <div class="container">
-            <h2 class="main-title">Novedades para ti</h2>
-            <section class="container-products">
-                <div class="producto">
-                    <img src="./img/productos/pexels-1.jpg" alt="" class="product__img">
-                    <div class="producto__description">
-                        <h3 class="product__title">PC MAC PLUS</h3>
-                        <span class="product__price" data-price="89995.99">RD$ 89,995.99</span>
-                        <i class="product__icon fa-solid fa-cart-plus"></i><!--icono del carrito-->
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./img/productos/pexels-2.jpg" alt="" class="product__img">
-                    <div class="producto__description">
-                        <h3 class="product__title">LAPTOP PERSONAL</h3>
-                        <span class="product__price" data-price="30995.99">RD$ 30,995.99</span>
-                        <i class="product__icon fa-solid fa-cart-plus"></i>
-
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./img/productos/pexels-3.jpg" alt="" class="product__img">
-                    <div class="producto__description">
-                        <h3 class="product__title">PC PARA DESARROLLADORES</h3>
-                        <span class="product__price" data-price="74995.99">RD$ 74,995.99</span>
-                        <i class="product__icon fa-solid fa-cart-plus"></i>
-
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./img/productos/pexels-4.jpg" alt="" class="product__img">
-                    <div class="producto__description">
-                        <h3 class="product__title">PC DOBLE MONITOR</h3>
-                        <span class="product__price" data-price="127995.99">RD$ 127,995.99</span>
-                        <i class="product__icon fa-solid fa-cart-plus"></i>
-
-                    </div>
-                </div>
-            </section>
+    <!-- Tu menú de botones aquí -->
+    <div class="button-sub__menu">
+        <h2 class="main-title">Categoría de proyectos</h2>
+        <div class="contenido-sub__menu">
+            <button class="border-boton__superior" data-section="proyecto-frontend">HTML CSS JS</button>
+            <button data-section="proyecto-csharpnet">CSharp.Net</button>
+            <button data-section="proyecto-vbnet">Visual Basic.Net</button>
+            <button class="border-boton__inferior" data-section="proyecto-maui">Maui.Net</button>
         </div>
-    </main>
 
-</body>
+    </div>
 
-<script src="../../js/mostrar-menu.js"></script>
+    <!-- Tus secciones aquí (las he dejado visibles por defecto) -->
+    <section class="section-proyecto-frontend">
+        <!-- Contenido de la sección 1 -->
+        <main class="main">
+            <div class="container">
+                <h2 class="main-title">Novedades para ti</h2>
+                <div class="container-products">
+                    <div class="producto">
+                        <img src="./img/productos/pexels-1.jpg" alt="" class="product__img">
+                        <div class="producto__description">
+                            <h3 class="product__title">PC MAC PLUS</h3>
+                            <span class="product__price" data-price="89995.99">RD$ 89,995.99</span>
+                            <i class="product__icon fa-solid fa-cart-plus"></i><!--icono del carrito-->
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img src="./img/productos/pexels-2.jpg" alt="" class="product__img">
+                        <div class="producto__description">
+                            <h3 class="product__title">LAPTOP PERSONAL</h3>
+                            <span class="product__price" data-price="30995.99">RD$ 30,995.99</span>
+                            <i class="product__icon fa-solid fa-cart-plus"></i>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.getElementById("menu-toggle");
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img src="./img/productos/pexels-3.jpg" alt="" class="product__img">
+                        <div class="producto__description">
+                            <h3 class="product__title">PC PARA DESARROLLADORES</h3>
+                            <span class="product__price" data-price="74995.99">RD$ 74,995.99</span>
+                            <i class="product__icon fa-solid fa-cart-plus"></i>
 
-        menuToggle.addEventListener("change", function () {
-            const selectedValue = menuToggle.value;
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img src="./img/productos/pexels-4.jpg" alt="" class="product__img">
+                        <div class="producto__description">
+                            <h3 class="product__title">PC DOBLE MONITOR</h3>
+                            <span class="product__price" data-price="127995.99">RD$ 127,995.99</span>
+                            <i class="product__icon fa-solid fa-cart-plus"></i>
 
-            // Oculta todas las secciones
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section class="section-proyecto-csharpnet" style="display: none;">
+        <!-- Contenido de la sección 2 -->
+        <a>Contenido de Proyectos CSharp.Net</a>
+    </section>
+
+    <section class="section-proyecto-vbnet" style="display: none;">
+        <!-- Contenido de la sección 3 -->
+        <a>Contenido de Proyectos Visual Basic.Net</a>
+    </section>
+
+    <section class="section-proyecto-maui" style="display: none;">
+        <!-- Contenido de la sección 4 -->
+        <a>Contenido de Proyectos Maui.Net</a>
+    </section>
+
+    <script src="../../js/mostrar-menu.js"></script>
+
+    <!-- Tu código JavaScript para mostrar/ocultar las secciones y gestionar el color de los botones -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".button-sub__menu button");
             const sections = document.querySelectorAll("section");
-            sections.forEach(function (section) {
-                section.style.display = "none";
+
+            buttons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    // Oculta todas las secciones
+                    sections.forEach(function (section) {
+                        section.style.display = "none";
+                    });
+
+                    // Desmarca todos los botones
+                    buttons.forEach(function (btn) {
+                        btn.classList.remove("selected");
+                    });
+
+                    // Muestra la sección correspondiente al botón
+                    const selectedSection = document.querySelector(`.section-${button.getAttribute("data-section")}`);
+                    if (selectedSection) {
+                        selectedSection.style.display = "block";
+                        button.classList.add("selected");
+                    }
+                });
             });
 
-            // Muestra la sección seleccionada
-            const selectedSection = document.querySelector(`.${selectedValue}`);
-            if (selectedSection) {
-                selectedSection.style.display = "block";
-            }
-        });
-    });
+            // Muestra la primera sección al cargar la página
+            sections[0].style.display = "block";
+            buttons[0].classList.add("selected");
 
-</script>
+
+        });
+    </script>
 
 </body>
 
