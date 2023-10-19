@@ -26,14 +26,11 @@
 .button-sub__menu h2 {
 
     text-align: center;
+    margin-left: -1rem;
 
 }
 
-.contenido-sub__menu {
-    display: flex;
-    justify-content: center;
 
-}
 
 .button-sub__menu button {
     all: initial;
@@ -72,21 +69,28 @@
 @media (max-width:600px) {
 
     .button-sub__menu {
-
-        margin-left: 10%;
-        margin-right: 5%;
+        margin: 0 0;
+        width: 100%;
+ 
 
     }
 
 
-    .contenido-sub__menu {
-        display: flex;
+   /* .contenido-sub__menu {
+
+
+        display:inline-table;
         flex-direction: column;
         align-items: center;
         align-items: center;
         width: 100%;
-    }
+    
+        display: flex;
+        justify-content: none;
+    
 
+    }
+*/
     .button-sub__menu button {
         border: 0;
         border-radius: 0;
@@ -98,20 +102,29 @@
     }
 
     .contenido-sub__menu .border-boton__superior {
-        border-top-right-radius: 0.5rem;
-        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.3rem;
+        border-top-left-radius: 0.3rem;
     border-top: solid 0.1rem var(--color-Uno);
         transition: all 0.5s;
     }
 
     .contenido-sub__menu .border-boton__inferior {
 
-        border-bottom-right-radius: 0.5rem;
-        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.3rem;
+        border-bottom-left-radius: 0.3rem;
         transition: all 0.5s;
     }
 
 
 
 
+}
+
+
+@media (min-width:601px) {
+    .contenido-sub__menu {
+        display: flex;
+        justify-content: center;
+    
+    }
 }
