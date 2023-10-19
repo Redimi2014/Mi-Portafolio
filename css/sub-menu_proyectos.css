@@ -47,8 +47,18 @@
     text-align: center;
     margin-right: 1rem;
     font-size: 0.9rem;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+ 
 }
 
+
+
+.button-sub__menu button:not(.selected):hover {
+    background-color: var(--color-Uno);
+    transition: all 0.5s;
+    cursor: pointer;
+}
 
 /* Estilo para botones seleccionados */
 .button-sub__menu button.selected {
