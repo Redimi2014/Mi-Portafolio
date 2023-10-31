@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="../../img/logo.svg">
-  
+
     <title>PORTAFOLIO | PROYECTOS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!--para extraer clases con iconos link https://fontawesome.com/search-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-      <!-- Este CSS nos servirá para utilizar los iconos de la página https://boxicons.com en el buscador. Buscamos el icono que queramos, le damos un clic, luego en font y copiamos la clase. -->
+    <!-- Este CSS nos servirá para utilizar los iconos de la página https://boxicons.com en el buscador. Buscamos el icono que queramos, le damos un clic, luego en font y copiamos la clase. -->
     <link rel="stylesheet" href="../../css/inicio.css">
     <link rel="stylesheet" href="../../css/proyectos.css">
     <link rel="stylesheet" href="../../css/sub-menu_proyectos.css">
-  </head>
+</head>
 
 <body>
 
@@ -23,12 +23,12 @@
     <header class="header">
         <nav class="barraa-titulo">
             <a href="./" class="barraa-titulo__menu"><i class='bx bx-home-alt'></i></a>
-          <!--  <a class="logo">Rey.</a>-->
-       
-           <!--<img src="../../img/logo.svg" alt="Logotipo" class="logo mi-logo__principal">--> 
+            <!--  <a class="logo">Rey.</a>-->
+
+            <!--<img src="../../img/logo.svg" alt="Logotipo" class="logo mi-logo__principal">-->
             <a class="logo">Rey.</a>
-   
-       
+
+
             <a class="barraa-titulo__menu" id="menu-toggle-left"><i class='bx bx-menu'></i></a>
         </nav>
 
@@ -45,16 +45,16 @@
     </header>
 
     <!-- Tu menú de botones aquí -->
-  <!-- Tu menú de botones aquí -->
-<div class="button-sub__menu">
-    <h2 class="main-title">Categoría de proyectos</h2>
-    <div class="contenido-sub__menu">
-        <button data-section="proyecto-frontend" class="border-boton__superior">HTML CSS JS</button>
-        <button data-section="proyecto-csharpnet">CSharp.Net</button>
-        <button data-section="proyecto-vbnet">Visual Basic.Net</button>
-        <button data-section="proyecto-maui" class="border-boton__inferior">Maui.Net</button>
+    <!-- Tu menú de botones aquí -->
+    <div class="button-sub__menu">
+        <h2 class="main-title">Categoría de proyectos</h2>
+        <div class="contenido-sub__menu">
+            <button data-section="proyecto-frontend" class="border-boton__superior">HTML CSS JS</button>
+            <button data-section="proyecto-csharpnet">CSharp.Net</button>
+            <button data-section="proyecto-vbnet">Visual Basic.Net</button>
+            <button data-section="proyecto-maui" class="border-boton__inferior">Maui.Net</button>
+        </div>
     </div>
-</div>
 
 
     <!-- Tus secciones aquí (las he dejado visibles por defecto) -->
@@ -65,11 +65,15 @@
                 <h2 class="main-title">Novedades para ti</h2>
                 <div class="container-products">
                     <div class="producto">
-                        <img src="./img/productos/pexels-1.jpg" alt="" class="product__img">
+                        <img src="./img/tic_tack_toe.JPG" alt="" class="product__img">
                         <div class="producto__description">
-                            <h3 class="product__title">PC MAC PLUS</h3>
-                            <span class="product__price" data-price="89995.99">RD$ 89,995.99</span>
-                            <i class="product__icon fa-solid fa-cart-plus"></i><!--icono del carrito-->
+                            <h3 class="product__title">JUEGO DEL GATO</h3>
+                            <span class="product__price" data-price="89995.99">TIC TAC TOE</span>
+                            <div class="bottones-productos">
+                                <i class="product__icon fa-solid bx bx-globe"></i>
+                                <i class="product__icon fa-solid bx bxl-github"></i>
+                            </div>
+
                         </div>
                     </div>
                     <div class="producto">
@@ -77,8 +81,10 @@
                         <div class="producto__description">
                             <h3 class="product__title">LAPTOP PERSONAL</h3>
                             <span class="product__price" data-price="30995.99">RD$ 30,995.99</span>
-                            <i class="product__icon fa-solid fa-cart-plus"></i>
-
+                            <div class="bottones-productos">
+                                <i class="product__icon fa-solid bx bx-globe"></i>
+                                <i class="product__icon fa-solid bx bxl-github"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="producto">
@@ -86,7 +92,21 @@
                         <div class="producto__description">
                             <h3 class="product__title">PC PARA DESARROLLADORES</h3>
                             <span class="product__price" data-price="74995.99">RD$ 74,995.99</span>
-                            <i class="product__icon fa-solid fa-cart-plus"></i>
+                            <div class="bottones-productos">
+                                <i class="product__icon fa-solid bx bx-globe"></i>
+                                <i class="product__icon fa-solid bx bxl-github"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img src="./img/productos/pexels-4.jpg" alt="" class="product__img">
+                        <div class="producto__description">
+                            <h3 class="product__title">PC DOBLE MONITOR</h3>
+                            <span class="product__price" data-price="127995.99">RD$ 127,995.99</span>
+                            <div class="bottones-productos">
+                                <i class="product__icon fa-solid bx bx-globe"></i>
+                                <i class="product__icon fa-solid bx bxl-github"></i>
+                            </div>
 
                         </div>
                     </div>
@@ -95,7 +115,10 @@
                         <div class="producto__description">
                             <h3 class="product__title">PC DOBLE MONITOR</h3>
                             <span class="product__price" data-price="127995.99">RD$ 127,995.99</span>
-                            <i class="product__icon fa-solid fa-cart-plus"></i>
+                            <div class="bottones-productos">
+                                <i class="product__icon fa-solid bx bx-globe"></i>
+                                <i class="product__icon fa-solid bx bxl-github"></i>
+                            </div>
 
                         </div>
                     </div>

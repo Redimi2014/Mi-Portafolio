@@ -30,6 +30,8 @@
     position: relative;
 }
 
+
+
 .producto>::before {
     content: "Nuevo";
     background: var(--color-Uno);
@@ -65,7 +67,7 @@
 }
 
 
-.main-title{
+.main-title {
     margin: 2rem 0;
     text-align: center;
 }
@@ -77,7 +79,7 @@
         height: 100px;
         object-fit: cover;
     }
-    
+
 }
 
 /*responsive para telefonos muy pequeños*/
@@ -87,8 +89,9 @@
         height: 150px;
         object-fit: cover;
     }
-    
+
 }
+
 /*responsive para telefonos muy pequeños*/
 @media screen and (min-width:300px) {
     .product__img {
@@ -96,7 +99,7 @@
         height: 200px;
         object-fit: cover;
     }
-    
+
 }
 
 
@@ -107,12 +110,23 @@
         height: 250px;
         object-fit: cover;
     }
-    
+
 }
 
 
 /*responsive para tablet*/
 @media screen and (min-width:601px) {
+
+    .producto {
+        border: 1px solid var(--color-borde-gris);
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    
+
+
     .container-products {
         /*volver los contenidos en tablas, rejillas*/
         grid-template-columns: repeat(2, 1fr);
@@ -123,26 +137,50 @@
         height: 120px;
         object-fit: cover;
     }
-    
-.main-title{
-    margin: 2rem 0;
-    text-align:left;
-}
-}
+
+    .main-title {
+        margin: 2rem 0;
+        text-align: left;
+    }
 
 
+
+
+
+
+}
+
+.bottones-productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.product__icon {
+    font-size: 2.5rem;
+}
 
 /*responsive para tablet*/
 @media screen and (min-width:768px) {
 
     .product__img {
         height: 180px;
+        transition: all 0.3s;
     }
 
-    .producto:hover .product__icon {
+
+    .producto:hover .product__img {
+        height: 190px;
+        transition: all 0.3s;
+    }
+
+
+    .product__icon:hover {
         /*esta funcion indica que cuando se pase el mouse ensima del contenedor que contiene las propiedades de los productos hara alguna accion en la propiedad product__icon*/
         color: var(--color-Uno);
         cursor: pointer;
+        transition: all 0.3s;
     }
 
 }
