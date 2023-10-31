@@ -45,6 +45,11 @@
     color: var(--color-dos);
 }
 
+.links-icon__referencias{
+    text-decoration: none;
+    color: #ccc;
+}
+
 .product__img {
     width: 100%;
     height: 250px;
@@ -170,10 +175,6 @@
     }
 
 
-    .producto:hover .product__img {
-        height: 190px;
-        transition: all 0.3s;
-    }
 
 
     .product__icon:hover {
