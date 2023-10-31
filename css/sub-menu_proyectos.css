@@ -70,7 +70,8 @@
 
     .button-sub__menu {
         margin: 0 0;
-        width: 100%;
+        width: 94%;
+        margin-left: 3%;
  
 
     }
@@ -102,23 +103,46 @@
         transition: all 0.5s;
     }
 
-    .contenido-sub__menu .border-boton__superior {
+   /* .contenido-sub__menu .border-boton__superior {
         border-top-right-radius: 0.3rem;
         border-top-left-radius: 0.3rem;
     border-top: solid 0.1rem var(--color-Uno);
         transition: all 0.5s;
-    }
+    }*/
 
-    .contenido-sub__menu .border-boton__inferior {
+   /* .contenido-sub__menu .border-boton__inferior {
 
         border-bottom-right-radius: 0.3rem;
         border-bottom-left-radius: 0.3rem;
         transition: all 0.5s;
+    }*/
+
+
+
+
+}
+
+
+@media (max-width:550px) {
+
+    .button-sub__menu {
+        margin: 0 0;
+        width: 92%;
+        margin-left: 4%;
+ 
+
     }
+}
 
+@media (max-width:400px) {
 
+    .button-sub__menu {
+        margin: 0 0;
+        width: 89%;
+        margin-left: 6%;
+ 
 
-
+    }
 }
 
 
