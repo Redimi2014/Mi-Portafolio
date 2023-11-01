@@ -12,7 +12,9 @@
     padding: 0 20px;
     /*agregar un padding de 20px a los costados del main*/
 }
-
+.container h2{
+    color: transparent;
+}
 .container-products {
     display: grid;
     /*volver los contenidos en tablas, rejillas*/
