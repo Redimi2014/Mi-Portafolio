@@ -1,0 +1,200 @@
+.cuerpo-contenedor__contenido {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    height: 100%;
+    width: 100%;
+}
+
+.cuerpo-contenedor__contenido .texto {
+    background-color: var(--color-negro-dos);
+    height: auto;
+    min-height: 30rem;
+    width: 60%;
+    border-radius: 3rem 0 0 3rem;
+    padding: 1.5rem;
+    margin-left: 2rem;
+}
+
+.cuerpo-contenedor__contenido .imagen {
+    background-color: var(--color-negro-dos);
+    height: auto;
+    width: 40%;
+    border-radius: 0 3rem 3rem 0;
+    margin-right: 2rem;
+    background-image: url('../img/PERFIL.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cuerpo-contenedor__contenido .texto h1 {
+    color: var(--color-rojo);
+    font-size: 3rem;
+}
+
+.cuerpo-contenedor__contenido .texto h2 {
+    font-size: 2rem;
+}
+
+.cuerpo-contenedor__contenido .texto p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.informacion-datos__final {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    margin-left: 2rem;
+    height: 3rem;
+    width: 25rem;
+    background-color: var(--color-rojo);
+    font-size: 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.informacion-datos__final i {
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.informacion-datos__final i:hover {
+    color: var(--color-negro-dos);
+    transition: all 0.3s;
+}
+
+.informacion-datos__final .fa-download {
+    margin-left: 2rem;
+    margin-right: 0;
+}
+
+.informacion-datos__final .fa-download a {
+    font-size: 1.2rem;
+}
+
+.contenedor-portada {
+    display: flex;
+    height: 25rem;
+    width: 100%;
+    background-image: url('../img/portada.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.4s;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.384);
+    justify-content: center;
+    align-items: center;
+    margin-top: -4rem;
+}
+
+.contenedor-portada .imagen-portada {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+.contenedor-portada .imagen-portada .lema {
+    color: var(--color-Secundario);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    padding: 1% 10%;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .cuerpo-contenedor__contenido .texto h1 {
+        text-align: center;
+    }
+
+    .cuerpo-contenedor__contenido .texto h2 {
+        text-align: center;
+    }
+
+    .cuerpo-contenedor__contenido .imagen {
+        background-position: top;
+    }
+
+    .cuerpo-contenedor__contenido .imagen {
+        padding-top: 2rem;
+    }
+
+    .foto-portada {
+        margin-top: -8rem;
+    }
+
+    .contenedor-portada {
+        margin-top: -8rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .cuerpo-contenedor__contenido {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -2rem;
+        height: auto;
+        width: 100%;
+    }
+
+    .cuerpo-contenedor__contenido .imagen {
+        background-color: transparent;
+        height: 10rem;
+        width: 100%;
+        border-radius: 3rem;
+        margin-right: 0;
+    }
+
+    .cuerpo-contenedor__contenido .texto {
+        background-color: var(--color-negro-dos);
+        min-height: 10rem;
+        width: auto;
+        border-radius: 3rem 3rem 3rem 0;
+        padding: 1.5rem;
+        margin: 1rem;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .cuerpo-contenedor__contenido .texto h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .cuerpo-contenedor__contenido .texto p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .cuerpo-contenedor__contenido .texto h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .cuerpo-contenedor__contenido .imagen {
+        background-position: center;
+    }
+
+    .informacion-datos__final {
+        margin-left: 1rem;
+        width: 16rem;
+        margin-bottom: 3rem;
+    }
+
+    .informacion-datos__final .fa-download a {
+        display: none;
+    }
+
+    .contenedor-portada {
+        margin-top: -8.2rem;
+    }
+}

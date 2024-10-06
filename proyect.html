@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./estilos/fondo.css">
+    <link rel="stylesheet" href="./estilos/navbarr.css">
+    <link rel="stylesheet" href="./estilos/seccion-curriculo.css">
+    <link rel="stylesheet" href="./estilos/contenedor-proyects.css">
+    <link rel="stylesheet" href="./estilos/contenedor-proyects-detalle.css">
+    <link rel="stylesheet" href="./estilos/barra-desplazamiento.css">
+
+</head>
+
+<body>
+
+    <!--Barra de navegacion-->
+    <nav class="menu_lista">
+        <div class="menu-lista__izquierda" id="logoprincipal">
+            <div class="logon-var"></div>
+        </div>
+        <div class="menu-lista__derecha">
+            <a class="botton-lista__menu" id="inicio"><i class="fa-solid fa-house-chimney-window"></i>INICIO</a>
+            <a class="botton-lista__menu" id="skills"><i class="fa-solid fa-head-side-virus"></i>SKILLS</a>
+            <a class="botton-lista__menu" id="formacion"><i class="fa-solid fa-graduation-cap"></i>FORMACION</a>
+            <a class="botton-lista__menu  menu-seleccionado" id="proyectos"><i
+                    class="fa-solid fa-code"></i>PROYECTOS</a>
+            <a class="botton-lista__menu" id="contacto"><i class="fa-solid fa-id-badge"></i>CONTACTO</a>
+
+        </div>
+    </nav>
+    <div class="botton-menu__responsivo"><i class="fa-solid fa-bars"></i></div>
+    <!---------------------------------------->
+    <!--boton de información-->
+    <div class="foto-usuario__curriculum" title="Clic para ver el curriculum y redes sociales"></div>
+    <div class="descargar__curriculum" id="docum-curriculum"><i class="fa-solid fa-download"> Curriculum</i></div>
+    <div class="redes-sociales__curriculum">
+        <i class="fa-brands fa-linkedin" id="linkedin-icon"></i>
+        <i class="fa-brands fa-square-github" id="github-icon"></i>
+        <i class="fa-brands fa-square-facebook" id="facebook-icon"></i>
+        <i class="fa-brands fa-square-instagram" id="instagram-icon"></i>
+    </div>
+
+    <div class="contenedor-general__proyectos">
+        <div class="conenedor-menu__proyectos">
+            <div class="list-proyectos list-html-Link"><i class="fa-brands fa-html5 icon-menu"></i><a
+                    class="text-menu">HTML CSS JS</a></div>
+            <div class="list-proyectos list-php-Link"><i class="fa-brands fa-php icon-menu"></i><a class="text-menu">PHP
+                    MySql</a></div>
+            <div class="list-proyectos list-csharp-Link">
+                <e class="icon-menu icon-csharp">C#</e><a class="text-menu">CSharp.Net</a>
+            </div>
+            <div class="list-proyectos list-vb-Link">
+                <e class="icon-menu icon-vbnet">VB</e><a class="text-menu">Visual Basic.Net</a>
+            </div>
+        </div>
+        <div class="contenedor-contenido-proyectos">
+            <!--Proyectos que pertenecen al la seccion de HTML CSS y JS -->
+            <div class="contenedor-proyecos__html-css-js">
+                <div class="contenedor-proyectos">
+
+                    <!-- Primer proyecto -->
+                    <div class="contenido-proyectos" id="baldosaSelecionadora">
+                        <img src="./img/Proyectos/HTML-CSS-JS/Tic-Tac-Toe/principal.jpg" alt="Proyecto Tic Tac Toe">
+                        <div class="recurso-imagenes">
+                            <img src="./img/Proyectos/HTML-CSS-JS/Tic-Tac-Toe/1.jpg" alt="Imagen 1">
+                            <img src="./img/Proyectos/HTML-CSS-JS/Tic-Tac-Toe/2.jpg" alt="Imagen 2">
+                            <img src="./img/Proyectos/HTML-CSS-JS/Tic-Tac-Toe/3.jpg" alt="Imagen 3">
+                            <img src="./img/Proyectos/HTML-CSS-JS/Tic-Tac-Toe/4.jpg" alt="Imagen 4">
+                        </div>
+                        <a class="nombre-proyecto">Juego del Gato</a>
+                        <a class="description-proyecto">Juego de estrategia para dos jugadores</a>
+                        <a class="description-proyecto__a"></a>
+                        <div class="contenedor-links">
+                            <a href="https://redimi2014.github.io/Tic-Tac-Toe-Game/" target="_blank"><i
+                                    class="fa-solid fa-globe"></i></a>
+                            <a href="https://github.com/Redimi2014/Tic-Tac-Toe-Game/"> <i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-solid fa-cloud-arrow-down"></i></a>
+                        </div>
+                        <a class="fecha_carga">15/04/2024</a>
+                    </div>
+
+                    <!-- Segundo proyecto -->
+                    <div class="contenido-proyectos" id="baldosaSelecionadora">
+                        <img src="./img/Proyectos/HTML-CSS-JS/score-board/principal.jpg" alt="Proyecto Score Board">
+                        <div class="recurso-imagenes">
+                            <img src="./img/Proyectos/HTML-CSS-JS/score-board/1.jpg" alt="Imagen 1">
+                            <img src="./img/Proyectos/HTML-CSS-JS/score-board/2.jpg" alt="Imagen 2">
+                            <img src="./img/Proyectos/HTML-CSS-JS/score-board/3.jpg" alt="Imagen 3">
+                            <img src="./img/Proyectos/HTML-CSS-JS/score-board/4.jpg" alt="Imagen 4">
+                        </div>
+                        <a class="nombre-proyecto">Tabla de Puntos</a>
+                        <a class="description-proyecto">Registra y muestra las puntuaciones</a>
+                        <a class="description-proyecto__a"></a>
+                        <div class="contenedor-links">
+                            <a href="https://redimi2014.github.io/tabla-de-puntaje/" target="_blank"><i
+                                    class="fa-solid fa-globe"></i></a>
+                            <a href="https://github.com/Redimi2014/Tabla-de-puntaje" target="_blank"> <i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+                        </div>
+                        <a class="fecha_carga">15/04/2024</a>
+                    </div>
+
+                    <div class="contenido-proyectos" id="baldosaSelecionadora">
+                        <img src="./img/Proyectos/HTML-CSS-JS/login/principal.jpg" alt="Proyecto Login">
+                        <div class="recurso-imagenes">
+                            <img src="./img/Proyectos/HTML-CSS-JS/login/1.jpg" alt="Imagen 1">
+                            <img src="./img/Proyectos/HTML-CSS-JS/login/2.jpg" alt="Imagen 2">
+                            <img src="./img/Proyectos/HTML-CSS-JS/login/3.jpg" alt="Imagen 3">
+                            <img src="./img/Proyectos/HTML-CSS-JS/login/4.jpg" alt="Imagen 4">
+                        </div>
+                        <a class="nombre-proyecto">Inicio de Sesión</a>
+                        <a class="description-proyecto">Pagina de inicio de sesión con registro</a>
+                        <a class="description-proyecto__a"></a>
+                        <div class="contenedor-links">
+                            <a href="https://redimi2014.github.io/login-registro-usuario/" target="_blank"><i
+                                    class="fa-solid fa-globe"></i></a>
+                            <a href="https://github.com/Redimi2014/login-registro-usuario" target="_blank"> <i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+                        </div>
+                        <a class="fecha_carga">15/04/2024</a>
+                    </div>
+
+                    <div class="contenido-proyectos" id="baldosaSelecionadora">
+                        <img src="./img/Proyectos/HTML-CSS-JS/lucky-draw/principal.jpg" alt="Proyecto LD | Lucky Draw">
+                        <div class="recurso-imagenes">
+                            <img src="./img/Proyectos/HTML-CSS-JS/lucky-draw/1.jpg" alt="Imagen 1">
+                            <img src="./img/Proyectos/HTML-CSS-JS/lucky-draw/2.jpg" alt="Imagen 2">
+                            <img src="./img/Proyectos/HTML-CSS-JS/lucky-draw/3.jpg" alt="Imagen 3">
+                            <img src="./img/Proyectos/HTML-CSS-JS/lucky-draw/4.jpg" alt="Imagen 4">
+                        </div>
+                        <a class="nombre-proyecto">Tómbola virtual</a>
+                        <a class="description-proyecto">Sorteo aleatorio de numeros</a>
+                        <a class="description-proyecto__a"></a>
+                        <div class="contenedor-links">
+                            <a href="https://redimi2014.github.io/rifa-web/" target="_blank"><i
+                                    class="fa-solid fa-globe"></i></a>
+                            <a href="https://github.com/Redimi2014/rifa-web" target="_blank"> <i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+                        </div>
+                        <a class="fecha_carga">15/04/2024</a>
+                    </div>
+                    <!-- Añade más proyectos siguiendo el mismo patrón -->
+                </div>
+            </div>
+
+            <!--Proyectos que pertenecen al la seccion de PHP -->
+            <div class="contenedor-proyecos__php">
+                <div class="contenedor-proyectos">
+                    <div class="contenido-proyectos" id="baldosaSelecionadora">
+                        <img src="./img/Proyectos/PHP/MTA-Server/principal.jpg" alt="Proyecto Login">
+                        <div class="recurso-imagenes">
+                            <img src="./img/Proyectos/PHP/MTA-Server/1.JPG" alt="Imagen 1">
+                            <img src="./img/Proyectos/PHP/MTA-Server//2.JPG" alt="Imagen 2">
+                            <img src="./img/Proyectos/PHP/MTA-Server/3.JPG" alt="Imagen 3">
+                            <img src="./img/Proyectos/PHP/MTA-Server/4.JPG" alt="Imagen 4">
+                        </div>
+                        <a class="nombre-proyecto">MTA-Server</a>
+                        <a class="description-proyecto">Proyecto red social, con base de datos SQLITE (Incompleto)
+                            Actualmente solo contiene:
+                            -Login y registro de usuario: funcional.
+                            -Seccion del inicio: solo funcional en diseño, no conectado a BD.
+                            -Seccion Configuracion: funcional BD, no diseño funcional
+                            -Seccion Perfil: Semifuncional base de datos, cambio de foto de perfil, muestra foto
+                            publicacion, muestra Seguidores y Seguidos
+                        </a>
+                        <a class="description-proyecto__a"></a>
+                        <div class="contenedor-links">
+
+                            <a href="https://github.com/Redimi2014/server-mta" target="_blank"> <i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+                        </div>
+                        <a class="fecha_carga">15/04/2024</a>
+                    </div>
+                    <!-- Añade más proyectos siguiendo el mismo patrón -->
+                </div>
+            </div>
+
+            <!--Proyectos que pertenecen al la seccion de PHP -->
+            <div class="contenedor-proyecos__csharp">
+                <div class="contenedor-proyectos">
+                    <!-- Añade más proyectos siguiendo el mismo patrón -->
+                    <a> Categoría sin proyecto</a>
+                </div>
+            </div>
+
+            <!--Proyectos que pertenecen al la seccion de PHP -->
+            <div class="contenedor-proyecos__vbnet">
+                <div class="contenedor-proyectos">
+                    <!-- Añade más proyectos siguiendo el mismo patrón -->
+                    <a> Categoría sin proyecto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Seccion para visualizar cualquier proyecto de forma detallada-->
+    <div class="contenedor-detalle_proyecto">
+        <div class="section-contenedor">
+            <div class="contenedor-detalles">
+                <div class="titulo-principal">
+                    <a class="titulo-texto">Titulo del proyecto</a>
+                    <a><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <img class="imagen-principal" src="./img/portada.jpg" alt="">
+                <div class="contenedor-imagen__description">
+                    <div class="contenedor-sub__imagenes">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                    <div class="contenedor-description__detalle">
+                        <a class="description">Aqui va la descricion del articulo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-globo">
+        <div class="globo-texto">
+            CLIC AQUÍ
+        </div>
+    </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/linksotros.js"></script>
+
+    <script src="./js/proyectos.js"></script>
+    <script src="./js/proyectos-detalle.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+* {
+
+    text-decoration: none;
+
+}
+
+:root {
+    --color-blanco: rgb(255, 255, 255);
+    --color-negro: rgb(26, 26, 26);
+    --color-negro-dos: rgb(50, 50, 50);
+    --color-rojo: rgb(255, 0, 86);
+    --color-sombra: rgba(0, 0, 0, 0.315);
+    --color-Primario: rgb(255, 0, 86);
+    --color-Secundario: rgb(255, 255, 255);
+    --color-Fondo-Obscuro: rgba(26, 26, 26);
+    --color-Fondo-Baldozas: rgb(40, 40, 40);
+    --color-Fondo-Selection: rgb(60, 60, 60);
+    --color-Fondo-Selection-superior: rgb(90, 90, 90);
+}
+
+@font-face {
+    font-family: 'PlaywriteDEGrund';
+    src: url('./font/PlaywriteDEGrund-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./font/PoppinsRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'PlaywriteDEGrund', sans-serif;
+    background-color: var(--color-negro);
+    margin: 0;
+    color: var(--color-blanco);
+    height: 100%;
+    width: 100%;
+}

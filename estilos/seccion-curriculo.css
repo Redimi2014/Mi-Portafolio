@@ -1,0 +1,131 @@
+.foto-usuario__curriculum {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--color-rojo);
+    border-radius: 1rem 0 0 0;
+    background-image: url('../img/PERFIL.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.descargar__curriculum {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: -10rem;
+    background-color: var(--color-rojo);
+    padding: 0.5rem;
+    border-radius: 0.3rem 0 0 0;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+
+
+.foto-usuario__piegrande {
+    height: 5rem;
+    width: 5rem;
+    transition: all 0.3s;
+    opacity: 0.9;
+}
+
+.mostrar-descurriculum__pie {
+    right: 5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.mostrar-descurriculum__pie:hover {
+    color: var(--color-negro);
+}
+
+.redes-sociales__curriculum {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    font-size: 2.2rem;
+    padding: 0.5rem 0.3rem;
+    background-color: var(--color-rojo);
+    bottom: -11rem;
+    right: 0;
+    height: 10rem;
+    width: 2.5rem;
+    border-radius: 1rem 0 0 0;
+    transition: all 0.3s;
+}
+
+.monstrar-redes__pie {
+    bottom: 5rem;
+    transition: all 0.3s;
+}
+
+.redes-sociales__curriculum i:hover {
+    cursor: pointer;
+    color: var(--color-negro);
+    transition: all 0.3s;
+}
+
+
+/*seccion del globo*/
+.contenedor-globo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       position: fixed;
+    bottom: 5.5rem;
+    right: 0;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.globo-texto {
+    position: relative;
+    background-color: var(--color-rojo); /* Color de fondo del globo */
+    color: #000; /* Color del texto */
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.7rem;
+    font-weight: bold;
+    font-size: 0.6rem;
+    text-align: center;
+    width: max-content;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.globo-texto__oculto{
+ display: none;
+}
+
+.globo-texto::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: var(--color-rojo) transparent;
+    transition: all 0.3s;
+}
+
+@media only screen and (min-width: 768px) {
+
+.foto-usuario__pie:hover {
+    height: 5rem;
+    width: 5rem;
+    transition: all 0.3s;
+    opacity: 0.9;
+}
+
+}

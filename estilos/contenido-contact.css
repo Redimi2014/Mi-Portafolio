@@ -1,0 +1,157 @@
+.cuerpo-contenedor__contenido {
+    margin: 3rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-rojo);
+    margin-bottom: 1.875rem;
+    height: 100%;
+}
+
+h2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: var(--color-blanco);
+    border-bottom: 0.125rem solid var(--color-rojo);
+    padding-bottom: 0.3125rem;
+    margin-bottom: 0.9375rem;
+    justify-content: center;
+}
+
+.cuerpo-contenedor__contenido div {
+    display: flex;
+    height: auto;
+    width: auto;
+    margin: 1rem;
+}
+
+.cuerpo-contenedor__contenido div div {
+    border-radius: 3rem;
+    background-color: var(--color-negro-dos);
+    transition: all 0.1s;
+}
+
+.cuerpo-contenedor__contenido div .baldosas-contenedores:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.1s;
+    background-color: var(--color-rojo);
+    color: var(--color-negro);
+}
+
+.cuerpo-contenedor__contenido .baldosas-contenedores:hover .imagen-linkedin,
+.cuerpo-contenedor__contenido .baldosas-contenedores:hover .imagen-facebook,
+.cuerpo-contenedor__contenido .baldosas-contenedores:hover .imagen-instagram {
+    filter: blur(5px); 
+    transition: filter 0.3s ease; 
+}
+
+.cuerpo-contenedor__contenido div div a {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.cuerpo-contenedor__contenido div div div i {
+    margin-left: 1.2rem;
+    margin-top: 1.2rem;
+    font-size: 2rem;
+}
+
+.cuerpo-contenedor__contenido div div a i {
+    font-size: 1.5rem;
+}
+
+.cuerpo-contenedor__contenido div .primero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+
+}
+
+.cuerpo-contenedor__contenido div .primero div {
+    background-image: url('../img/linkedin-walpaper.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 15rem;
+    width: auto;
+    border-radius: 3rem 3rem 0 0;
+
+}
+
+.cuerpo-contenedor__contenido div .segundo {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+.cuerpo-contenedor__contenido div .segundo div {
+    background-image: url('../img/facebook-walpaper.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 15rem;
+    width: auto;
+    margin: 0;
+    border-radius: 3rem 3rem 0 0;
+}
+
+.cuerpo-contenedor__contenido div .tercero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+.cuerpo-contenedor__contenido div .tercero div {
+    background-image: url('../img/instagram-walpaper.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3rem 3rem 0 0;
+    height: 15rem;
+    width: auto;
+    margin: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .cuerpo-contenedor__contenido div .baldosas-contenedores div {
+        height: 10rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .cuerpo-contenedor__contenido {
+        margin: 1rem;
+        margin-top: 4rem;
+    }
+
+    .cuerpo-contenedor__contenido .section-contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuerpo-contenedor__contenido div {
+        margin: 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .cuerpo-contenedor__contenido div .baldosas-contenedores div {
+        height: 8rem;
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    .cuerpo-contenedor__contenido div div {
+        border-radius: 1.5rem;
+    }
+}
